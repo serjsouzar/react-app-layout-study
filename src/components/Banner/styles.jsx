@@ -172,7 +172,7 @@ export const ImagesContent = styled.div`
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
-    left: 15px;
+    left: 22px;
     top: 5px;
   }
 
