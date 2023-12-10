@@ -19,7 +19,7 @@ export const Container = styled.div`
   transition: all ease 0.2s;
 
   @media (max-width: 680px) {
-    width: 390px;
+    width: 370px;
     height: 600px;
     flex-shrink: 0;
   }
@@ -36,25 +36,26 @@ export const Content = styled.div`
 `;
 
 export const TitlePresentation = styled.div`
-  width: 416px;
+  width: 424px;
 
   @media (max-width: 680px) {
-    width: 390px;
+    width: 370px;
     height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
   }
 
   h1 {
     font-size: 68px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 85px;
-    font-family: Montserrat;    
+    font-family: Montserrat;
 
     @media (max-width: 680px) {
-      font-size: 36px;
-      font-style: normal;
-      font-weight: balder;
-      line-height: 85px;
+      font-size: 36px;     
     }
   }
   h2 {
@@ -63,7 +64,13 @@ export const TitlePresentation = styled.div`
     font-weight: 700;
     line-height: normal;
     width: 351px;
-    position: relative;    
+    position: relative;
+
+    @media (max-width: 680px) {
+      font-size: 20px;  
+      position: relative;
+      bottom: 11%;
+    }
   }
   h1,
   h2 {
@@ -73,14 +80,14 @@ export const TitlePresentation = styled.div`
 
 export const SubtitlePresentation = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 17px;
+  flex-direction: column;  
   width: 449px;
 
   @media (max-width: 680px) {
-    width: 390px;
+    width: 370px;
     height: 600px;
-    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   p {
@@ -90,13 +97,24 @@ export const SubtitlePresentation = styled.div`
     line-height: 24px;
     color: #343c54;
     height: 48px;
+    position: relative;    
+    
+    &:first-child{
+      top: 23px;
+    }
 
     @media (max-width: 680px) {
       text-align: center;
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
-      width: 380px;
+      width: 350px;
+      top: -25px;
+
+      &:first-child{      
+      width: 368px;            
+      top: unset;
+    }
     }
   }
 
@@ -113,6 +131,10 @@ export const SubtitlePresentation = styled.div`
 
     &:hover {
       cursor: pointer;
+    }
+
+    @media (max-width: 680px) {
+      //margin-top: 10px;
     }
   }
 `;
@@ -131,10 +153,17 @@ export const ImagesContent = styled.div`
     flex-shrink: 0;
     opacity: 1;
     position: relative;
-    right: 50%;
+    right: 54%;
     padding-top: 3px;
-    bottom: 11%;
+    bottom: 53px;
     z-index: 8;
+    transition: all ease 0.2s;
+
+    @media (max-width: 680px) {
+      width: 284.183px;
+      height: 306.044px;
+      flex-shrink: 0;
+    }
   }
 
   @media (max-width: 680px) {
@@ -158,9 +187,10 @@ export const ImagesContent = styled.div`
     background: rgba(0, 120, 230, 0.05);
 
     @media (max-width: 680px) {
-      width: 331.092px;
+      width: 308.092px;
       height: 331.092px;
-      flex-shrink: 0;
+      top: 62%;
+      left: 17%;
     }
   }
 
@@ -168,8 +198,8 @@ export const ImagesContent = styled.div`
     width: 583.749px;
     height: 583.749px;
     flex-shrink: 0;
-    top: -17px;
-    left: 40%;
+    top: 3px;
+    left: 43%;
     transition: all ease 0.2s;
 
     border-radius: 583.749px;
@@ -181,8 +211,8 @@ export const ImagesContent = styled.div`
       width: 265.852px;
       height: 265.852px;
       flex-shrink: 0;
-      top: 35px;
-      left: 32px;
+      top: 1%;
+      left: 43%;
     }
   }
 
@@ -207,6 +237,18 @@ export const ImagesContent = styled.div`
       height: 74.182px;
       position: unset;
     }
+
+    @media (max-width: 680px) {
+      width: 54.651px;
+      height: 54.651px;
+      flex-shrink: 0;
+      border: 3px solid rgba(225, 237, 248, 1);
+
+      img {
+        width: 29.313px;
+        height: 33.784px;
+      }
+    }
   }
 
   .iphoneImage {
@@ -229,6 +271,19 @@ export const ImagesContent = styled.div`
       height: 82.955px;
       position: unset;
     }
+
+    @media (max-width: 680px) {
+      width: 56.928px;
+      height: 56.928px;
+      flex-shrink: 0;
+      border: 3px solid rgba(225, 237, 248, 1);
+
+      img {
+        width: 26.911px;
+        height: 37.779px;
+        flex-shrink: 0;
+      }
+    }
   }
 
   .smartWatchImage {
@@ -244,12 +299,23 @@ export const ImagesContent = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    left:85%;
-    top:26%;
+    left: 82%;
+    top: 26%;
 
     img {
       width: 50px;
-      height: 50px;      
+      height: 50px;
+    }
+
+    @media (max-width: 680px) {
+      width: 39.166px;
+      height: 39.166px;
+      flex-shrink: 0;
+
+      img {
+        width: 22.771px;
+        height: 22.771px;
+      }
     }
   }
 `;
