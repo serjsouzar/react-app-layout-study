@@ -18,10 +18,10 @@ export const Container = styled.div`
   flex-wrap: wrap;
   transition: all ease 0.2s;
 
-  @media (max-width: 680px) {
+  @media (max-width: 790px) {
     width: 370px;
     height: 600px;
-    flex-shrink: 0;
+    flex-shrink: 0;    
   }
 `;
 
@@ -38,7 +38,7 @@ export const Content = styled.div`
 export const TitlePresentation = styled.div`
   width: 424px;
 
-  @media (max-width: 680px) {
+  @media (max-width: 790px) {
     width: 370px;
     height: 600px;
     text-align: center;
@@ -54,7 +54,7 @@ export const TitlePresentation = styled.div`
     line-height: 85px;
     font-family: Montserrat;
 
-    @media (max-width: 680px) {
+    @media (max-width: 790px) {
       font-size: 36px;     
     }
   }
@@ -66,7 +66,7 @@ export const TitlePresentation = styled.div`
     width: 351px;
     position: relative;
 
-    @media (max-width: 680px) {
+    @media (max-width: 790px) {
       font-size: 20px;  
       position: relative;
       bottom: 11%;
@@ -83,7 +83,7 @@ export const SubtitlePresentation = styled.div`
   flex-direction: column;  
   width: 449px;
 
-  @media (max-width: 680px) {
+  @media (max-width: 790px) {
     width: 370px;
     height: 600px;
     justify-content: center;
@@ -103,7 +103,7 @@ export const SubtitlePresentation = styled.div`
       top: 23px;
     }
 
-    @media (max-width: 680px) {
+    @media (max-width: 790px) {
       text-align: center;
       font-size: 14px;
       font-weight: 400;
@@ -128,14 +128,11 @@ export const SubtitlePresentation = styled.div`
     border: none;
     font-weight: 600;
     letter-spacing: 2px;
+    font-family: Roboto;
 
     &:hover {
       cursor: pointer;
-    }
-
-    @media (max-width: 680px) {
-      //margin-top: 10px;
-    }
+    }    
   }
 `;
 
@@ -159,17 +156,24 @@ export const ImagesContent = styled.div`
     z-index: 8;
     transition: all ease 0.2s;
 
-    @media (max-width: 680px) {
+    @media (max-width: 790px) {
       width: 284.183px;
       height: 306.044px;
       flex-shrink: 0;
+      right: 54%;
+      bottom: 23px;
     }
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 790px) {
     width: 331.092px;
     height: 331.092px;
     flex-shrink: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    left: 15px;
+    top: 5px;
   }
 
   .sphereOne {
@@ -186,11 +190,10 @@ export const ImagesContent = styled.div`
     border-radius: 727px;
     background: rgba(0, 120, 230, 0.05);
 
-    @media (max-width: 680px) {
-      width: 308.092px;
-      height: 331.092px;
-      top: 62%;
-      left: 17%;
+    @media (max-width: 790px) {
+      width: 331.092px;
+      height: 331.092px;      
+      left: 4%;
     }
   }
 
@@ -207,7 +210,7 @@ export const ImagesContent = styled.div`
     position: relative;
     z-index: 5;
 
-    @media (max-width: 680px) {
+    @media (max-width: 790px) {
       width: 265.852px;
       height: 265.852px;
       flex-shrink: 0;
@@ -238,11 +241,12 @@ export const ImagesContent = styled.div`
       position: unset;
     }
 
-    @media (max-width: 680px) {
+    @media (max-width: 790px) {
       width: 54.651px;
       height: 54.651px;
       flex-shrink: 0;
       border: 3px solid rgba(225, 237, 248, 1);
+      left: 20px;
 
       img {
         width: 29.313px;
@@ -272,11 +276,13 @@ export const ImagesContent = styled.div`
       position: unset;
     }
 
-    @media (max-width: 680px) {
+    @media (max-width: 790px) {
       width: 56.928px;
       height: 56.928px;
       flex-shrink: 0;
       border: 3px solid rgba(225, 237, 248, 1);
+      left: 80%;
+      bottom: 7%;
 
       img {
         width: 26.911px;
@@ -307,10 +313,11 @@ export const ImagesContent = styled.div`
       height: 50px;
     }
 
-    @media (max-width: 680px) {
+    @media (max-width: 790px) {
       width: 39.166px;
       height: 39.166px;
       flex-shrink: 0;
+      top: 24%;
 
       img {
         width: 22.771px;
