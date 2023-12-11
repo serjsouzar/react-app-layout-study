@@ -4,12 +4,11 @@ export const PrizesBackGround = styled.div`
   width: 100%;
   height: 358px;
   background: #eff5fa;
-  position: relative;
   z-index: 10;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 
 export const Container = styled.div`
@@ -17,6 +16,14 @@ export const Container = styled.div`
 
   @media (max-width: 790px) {
     width: 370px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 export const PrizesContainer = styled.div`
@@ -28,14 +35,6 @@ export const PrizesContainer = styled.div`
   @media (max-width: 790px) {
     display: grid;
     grid-auto-flow: column;
-    scroll-behavior: auto;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    width: 1274px;
   }
 `;
